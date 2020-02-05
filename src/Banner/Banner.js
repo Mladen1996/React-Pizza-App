@@ -7,6 +7,7 @@ export const BannerStyle= styled.div`
     background:url(${banner});
     background-position:center;
     background-size:cover;
+    filter:constrast(75%);
 `;
 
 export default function Banner(){

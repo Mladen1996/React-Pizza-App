@@ -7,9 +7,11 @@ import FoodDialog from './FoodDialog/FoodDialog';
 import {GlobalStyle} from './Styles/GlobalStyles';
 import {useOpenFood} from './Hooks/useOpenFood';
 import {useOrders} from './Hooks/useOrders';
+import {useTitle} from './Hooks/useTitle';
 function App() {
   const openFood=useOpenFood();
   const orders=useOrders();
+  useTitle({...openFood,...orders});
   return (
     <>
     <GlobalStyle/>

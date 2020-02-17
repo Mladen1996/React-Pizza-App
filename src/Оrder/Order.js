@@ -60,6 +60,7 @@ export default function Order({orders}){
                         order.toppings.filter(t=> t.checked).map(topping=> topping.name).join(",")
                     }
                 </DetailItem>
+                {order.choice && <DetailItem>{order.choice}</DetailItem>}
         </OrderContainer>
     ))}
     <OrderContainer>

@@ -2,20 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Righteous" rel="stylesheet">
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -40,23 +35,24 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
     <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
-
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-database.js"></script>
 <!-- TODO: Add SDKs for Firebase products that you want to use
      https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.1/firebase-analytics.js"></script>
 
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
-    apiKey: "AIzaSyCslfbjB-Nii1BVrkG644NkWH8kfshlbIU",
-    authDomain: "sliceline-2a3c6.firebaseapp.com",
-    databaseURL: "https://sliceline-2a3c6.firebaseio.com",
-    projectId: "sliceline-2a3c6",
-    storageBucket: "sliceline-2a3c6.appspot.com",
-    messagingSenderId: "465504505934",
-    appId: "1:465504505934:web:77f2c77ea717c18788f31f",
-    measurementId: "G-ME6Y4NKBQ0"
+    apiKey: "AIzaSyCP8rmlio-yXSOF8zMeqpTHUbTnc7bPkko",
+    authDomain: "sliceline-cd83a.firebaseapp.com",
+    databaseURL: "https://sliceline-cd83a.firebaseio.com",
+    projectId: "sliceline-cd83a",
+    storageBucket: "sliceline-cd83a.appspot.com",
+    messagingSenderId: "1072485959977",
+    appId: "1:1072485959977:web:a2cc47e27e073832410f38",
+    measurementId: "G-BHTLBRX0HK"
   };
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);

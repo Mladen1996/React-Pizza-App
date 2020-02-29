@@ -7,6 +7,42 @@ export function formatPrice(price) {
 
 export const foodItems = [
   {
+    img: "/img/cevapi.jpg",
+    name: "Ćevapi",
+    section: "Barbecue",
+    price: 1.5
+  },
+  {
+    img: "/img/pljeskavica.jpg",
+    name: "Pljeskavica",
+    section: "Barbecue",
+    price: 2
+  },
+  {
+    img: "/img/gurmanska.jpg",
+    name: "Gurmanska pljeskavica",
+    section: "Barbecue",
+    price: 2.5
+  },
+  {
+    img: "/img/punjena-pljeskavica.jpg",
+    name: "Punjena pljeskavica",
+    section: "Barbecue",
+    price: 2.5
+  },
+  {
+    img: "/img/belomeso.jpg",
+    name: "Belo meso",
+    section: "Barbecue",
+    price: 3
+  },
+  {
+    img: "/img/kobasice.jpg",
+    name: 'Kobasice',
+    section: "Barbecue",
+    price: 3
+  },
+  {
     name: "Cheese Pizza",
     img: "/img/pizza.png",
     section: "Pizza",
@@ -53,8 +89,10 @@ export const foodItems = [
     price: 1,
     name: "Soda",
     section: "Drinks",
+    img: "/img/soda.jpg",
     choices: ["Coke", "Sprite", "Root Beer"]
   }
+ 
 ];
 
 export const foods = foodItems.reduce((res, food) => {

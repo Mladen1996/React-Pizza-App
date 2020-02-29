@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Navbar } from "./Navbar/Navbar";
-import { Banner } from "./Banner/Banner";
+import { Banner,CompanyName} from "./Banner/Banner";
 import { Menu } from "./Menu/Menu";
 import { FoodDialog } from "./FoodDialog/FoodDialog";
 import { GlobalStyle } from "./Styles/GlobalStyle";
@@ -27,7 +27,9 @@ function App() {
       <FoodDialog {...openFood} {...orders} />
       <Navbar {...auth}/>
       <Order {...orders} {...openFood} {...auth} {...orderDialog}/>
-      <Banner />
+      <Banner>
+        <CompanyName>Fast Food Sliceline</CompanyName>
+      </Banner>
       <Menu {...openFood} />
     </>
   );

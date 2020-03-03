@@ -261,3 +261,39 @@
 
 [error] 
 [error] Error: Unexpected error while deploying database rules.
+[debug] [2020-03-03T12:42:38.364Z] ----------------------------------------------------------------------
+[debug] [2020-03-03T12:42:38.370Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\mladj\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2020-03-03T12:42:38.371Z] CLI Version:   7.14.0
+[debug] [2020-03-03T12:42:38.371Z] Platform:      win32
+[debug] [2020-03-03T12:42:38.372Z] Node Version:  v10.16.0
+[debug] [2020-03-03T12:42:38.375Z] Time:          Tue Mar 03 2020 13:42:38 GMT+0100 (GMT+01:00)
+[debug] [2020-03-03T12:42:38.375Z] ----------------------------------------------------------------------
+[debug] [2020-03-03T12:42:38.376Z] 
+[debug] [2020-03-03T12:42:38.408Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-03-03T12:42:38.410Z] > authorizing via signed-in user
+[debug] [2020-03-03T12:42:38.411Z] [iam] checking project sliceline-2a3c6 for permissions ["cloudfunctions.functions.create","cloudfunctions.functions.delete","cloudfunctions.functions.get","cloudfunctions.functions.list","cloudfunctions.functions.update","cloudfunctions.operations.get","firebase.projects.get","firebasedatabase.instances.update","firebasehosting.sites.update"]
+[debug] [2020-03-03T12:42:38.418Z] >>> HTTP REQUEST POST https://cloudresourcemanager.googleapis.com/v1/projects/sliceline-2a3c6:testIamPermissions  
+
+[debug] [2020-03-03T12:42:39.525Z] <<< HTTP RESPONSE 200
+[debug] [2020-03-03T12:42:39.537Z] >>> HTTP REQUEST GET https://firebase.googleapis.com/v1beta1/projects/sliceline-2a3c6  
+ 
+[debug] [2020-03-03T12:42:39.902Z] <<< HTTP RESPONSE 200
+[info] 
+[info] === Deploying to 'sliceline-2a3c6'...
+[info] 
+[info] i  deploying database, functions, hosting
+[info] i  database: checking rules syntax...
+[debug] [2020-03-03T12:42:45.754Z] >>> HTTP REQUEST PUT https://sliceline-2a3c6.firebaseio.com/.settings/rules.json?dryRun=true  
+ {
+  "rules": {
+    ".read": "auth != null",
+    ".write": "auth != null"
+  }
+}
+[debug] [2020-03-03T12:42:46.392Z] <<< HTTP RESPONSE 404
+[debug] [2020-03-03T12:42:46.394Z] <<< HTTP RESPONSE BODY {
+  "error" : "Firebase error. Please ensure that you spelled the name of your Firebase correctly"
+}
+
+[error] 
+[error] Error: Unexpected error while deploying database rules.
